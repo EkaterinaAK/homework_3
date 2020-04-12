@@ -28,7 +28,7 @@
 .burger .line{
     display: block;
     width: 18px;
-    height: 2px;
+    height: 3px;
     background-color: #000000;
     margin: 0 auto;
 }
@@ -50,7 +50,7 @@ header{
     border-radius: 50%;
     box-shadow: 0 0 25px 35px rgb(0, 0, 0,0.1);
     position: absolute;
-    left: calc(50%-205px);
+    left: 37%;
     top: -205px;
     text-align: center;
 }
@@ -70,9 +70,9 @@ header{
 }
 .search{
     position: absolute;
-    right: -100px;
+    right: 0;
     text-align: center;
-    line-height: 54px;
+    line-height: 67px;
 }
 .search i{
     font-size: 21px;
@@ -183,11 +183,20 @@ color: #000000;
     margin-top: 120px;
 
 }
-.blk{
-    display: inline-block;
-    justify-content: center;
-    width: 49.5%;
+.stel2, .stel3{
     position: relative;
+    height: 50%;
+}
+
+.stel2 .blk, .stel3 .blk{
+    position: absolute;
+    left: 0;
+    width: 50%;
+}
+
+.stel2 .text, .stel3 .images{
+    right:0;
+    left: auto;
 }
 
 .blk h2{
@@ -202,53 +211,103 @@ color: #000000;
     margin-top: 60px;
     margin-left: 128px;
 }
-.container6{
-   width: 90%;
-   height: 630px;
-   margin-top: 217px;
-   text-align: center;
+
+.container5{
+    background-image: url(./images/Snowflake.png);
+    background-repeat: no-repeat;
+    height: 630px;
+    background-size: 35%;
+    height: 1500px;
+    max-width: 100%;
+    position: relative;
+    background-color: ffffff;
+    margin-top: 120px;
 
 }
-#leftcol{
+.stelag, .stelag2{
+    position: relative;
+    height: 40%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.stelag .p1, .stelag2 .op2{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.stelag .op1, .stelag2 .p2{
+    position: absolute;
+    right: 0;
+    left: 846px;
+    margin-top: 65px;
+}
+.p2{
     background-image: url(./images/Snowflake.png);
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    height: 630px;
+    size: 75%;
+}
+.op1 h2, .op2 h2{
+    color: #43a9ff;
+    font-size: 48px;
+    margin-top: 120px;
+    margin-left: 45px;
+}
+.op1 h6, .op2 h6{
+    color: #c0c5c9;
+    font-size: 16px;
+    margin-top: 60px;
+    margin-left: 45px;
+}
+
+.container6{
+    background-image: url(./images/Snowflake.png);
+    background-repeat: no-repeat;
+    height: 630px;
+    background-size: 35%;
+    color: #ffffff;
+    max-width: 100%;
+    margin-top: 150px;
+}
+.leftcol{
     position: absolute;
     z-index: 0;
 }
-#rightcol{
+.rightcol{
     position: relative;
     z-index: 1075px;
     margin-left: 1075px;
     padding-top: 150px;
 }
-#rightcol h3{
+.rightcol h3{
     font-size: 48px;
     color: #fe3254;
     margin-bottom: 48px;
 }
-#rightcol h6{
+.rightcol h6{
     padding-top: 23px;
     font-size: 16px;
     color:#bbc0c6;
 }
-#rightcol h4{
+.rightcol h4{
     padding-top: 84px;
     font-size: 16px;
     color: #000000;
 } 
-#rightcol h5{
+.rightcol h5{
     padding-top: 15px;
     font-size: 16px;
     color: #ccd0d5;
 } 
 .container7 h6{
-    text-align: center;
     font-size: 18px;
     color:#d2d5d8;
     margin-top: 137px;
 }
 .container7 h2{
-    text-align: center;
     font-size: 48px;
     color: #000000;
     margin-top: 28px;
@@ -271,23 +330,17 @@ color: #000000;
     transition: 0.2s ease-in-out;
 }
 .container7{
-    height: 800px;
+    height: 260px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
     text-align: center;
+    
 }
-.container5{
-    height: 1400px;
-    width: 100%;
-    text-align: center;
-    margin-top: 205px;
+footer{
+    height: 1130px;
+    background-image: url(./images/landscape.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
-} 
-@media(max-width:1024px){
-    .container4{
-        width: 50%;
-    }
 }
